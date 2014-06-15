@@ -1,0 +1,21 @@
+title=Remover arquivos deletados do versionamento
+date=2014-06-15
+type=post
+tags=blog
+status=published
+~~~~~~
+
+<p>Para remover arquivos que foram versionados</p>
+
+<pre class="prettyprint">
+<code>
+	git ls-files --deleted | xargs git rm
+</code>
+</pre>
+
+<p>Após isso, adicione(add.) e execute o commit novamente</p>
+<pre class="prettyprint">
+<code>
+	git add -u
+</code>
+</pre>
