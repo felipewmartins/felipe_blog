@@ -13,6 +13,6 @@
 	
 	<hr />
 	
-	<p>Posts antigos estão disponíveis em: <a href="/${config.archive_file}">Posts Antigos</a>.</p>
+	<p>Posts antigos estão disponíveis em: <a href="/${config.archive_file}">Histórico</a>.</p>
 
 <%include "footer.gsp"%>
