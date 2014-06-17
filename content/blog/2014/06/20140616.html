@@ -1,0 +1,82 @@
+title=Acesso a código nativo utilizando JNA
+date=2014-06-16
+type=post
+tags=blog
+status=published
+~~~~~~
+
+<p>Acesso a código nativo utilizando JNA</p>
+Até então o acesso a código nativo é feito via JNI(Java Native Interface), uma funcionalidade disponibilizada pela Sun(Hoje Oracle).
+O uso de JNI para acesso aos métodos nativos é bastante complexo e exige um conhecimento inermediário em C\C++. A biblioteca JNA, encapsula os métodos de acesso a interface nativa de maneira mais simples.
+
+<p>O código abaixo converte uma cadeia de caracteres para inteiro e exibe no console:</p>
+
+<pre class="prettyprint">
+<code>
+	#include <stdlib.h>
+	int main() { 
+	int ano = atoi("2012"); 
+	printf("Hello [%s] [%d] \n", "World", ano); 
+	return 0; }
+
+</code>
+</pre>
+
+Para compilar este código, deve usar os comandos abaixo:
+<pre>
+	<code>
+		- Compilando e gerando o executável 
+		helloWorld: gcc -o helloWorld HelloWorld.c 
+		- Executando: ./helloWorld 
+		Saída: Hello [World] [2012] 
+	</code>
+</pre>
+
+Toda a função nativa que for usada no programa deverá ser declarada em uma interface.
+<pre class="prettyprint">
+	<code>
+		import com.sun.jna.Library; 
+		public interface CLibrary extends Library { 
+		
+		void printf(String format, Object... args); 
+		int atoi(String value); 
+	}
+
+	</code>
+</pre>
+Após declarar a interface, a classe CLibrary(exemplo), fará a chamada diretamente da biblioteca correspondente ao SO, sendo DLL para windows e SO para Unix.
+<pre class="prettyprint">
+	<code>
+		import com.sun.jna.Native; 
+		public final class CLibraryFunctions { 
+			private CLibrary cLibraryInstance; 
+			public CLibraryFunctions() { 
+				cLibraryInstance = (CLibrary)Native.loadLibrary("c", CLibrary.class); 
+			} 
+			public void printf(String format, Object... args) { 
+			cLibraryInstance.printf(format, args); 
+		} 
+		public int atoi(String data) { return cLibraryInstance.atoi(data); 
+	} 
+}
+
+	</code>
+</pre>
+A classe Native, possui o método loadLibrary que carrega a biblioteca correspondente do SO. Neste exemplo, foi passado como argumento, o caractere "c". O Método encarrega-se de preencher o restante do nome com o prefixo "lib" e a extensão ".so".
+
+Feito esse processo, podemos realizar a chamada do programa principal, retornando o resultado do processo.
+<pre class="prettyprint">
+	<code>
+		public class JNAHelloWorld { 
+			public static void main(String[] args) { 
+				CLibraryFunctions cLib = new CLibraryFunctions(); 
+				int ano = cLib.atoi("2012"); 
+				cLib.printf("Hello [%s] [%d]", "World", ano); 
+			} 
+		}
+	</code>
+</pre>
+E teremos a saída, Hello [World] [2012]<br>
+
+Repositório no Github: <a href="https://github.com/twall/jna">jna</a><br>
+Referências: Acesso ao código nativo usando JNA (Java Native Access) <a href="http://www.devmedia.com.br/acesso-ao-codigo-nativo-usando-jna-java-native-access/26535">devmedia</a>
