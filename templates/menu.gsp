@@ -15,7 +15,7 @@
             <li><a href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>index.html">Home</a></li>
             <li><a href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>about.html">About</a></li>
             <li><a href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>${config.feed_file}">Subscribe</a></li>
-            <li><script type="text/javascript" src="http://counter6.statcounterfree.com/private/countertab.js?c=10c79b1ce312e887acf591e535dca974"></script></li>
+            <li><script type="text/javascript" src="http://counter6.statcounterfree.com/private/countertab.js?c=503d6e2dba5cdf3781026a94fe9c5250"></script></li>
             <li><script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
