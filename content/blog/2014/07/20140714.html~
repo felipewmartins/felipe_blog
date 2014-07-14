@@ -1,0 +1,16 @@
+title=Content assist não funciona no eclipse(Xubuntu)
+date=2014-07-14
+type=post
+tags=blog
+status=published
+~~~~~~
+
+<p>Para corrigir este problema deve-se alterar uma configuração de entrada do xfce.</p><br>
+No xfce:
+<li>
+	<ul>Acessar <b>Configurações</b>-><b>Métodos de entrada de teclado</b></ul>
+</li><br>
+<p>Feito isso, deve-se apagar o campo <i>Atalhos do teclado</i> e reiniciar o eclipse.</p>
+
+
+
