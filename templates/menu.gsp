@@ -26,7 +26,7 @@
             ga('send', 'pageview');
 
           </script></li>
-          </ul>
+          <li>
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
               <!-- anuncio primario -->
                 <ins class="adsbygoogle"
@@ -36,6 +36,8 @@
             <script>
               (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
+          </li>
+          </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
