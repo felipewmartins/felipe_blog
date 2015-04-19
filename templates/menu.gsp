@@ -26,6 +26,18 @@
             ga('send', 'pageview');
 
           </script></li>
+          <li>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Anuncio Responsivo -->
+                    <ins class="adsbygoogle"
+                            style="display:block"
+                            data-ad-client="ca-pub-8008878266185770"
+                            data-ad-slot="8164465842"
+                            data-ad-format="auto"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+          </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
