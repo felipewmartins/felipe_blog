@@ -9,7 +9,7 @@
                  data-ad-slot="8840620240"></ins>
           <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
+          </script><br>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
