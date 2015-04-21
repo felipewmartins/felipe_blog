@@ -1,8 +1,7 @@
 	<!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
-        <div class="navbar-header">
-          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <!-- anuncio primario -->
             <ins class="adsbygoogle"
                  style="display:inline-block;width:728px;height:90px"
@@ -11,6 +10,7 @@
           <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
+        <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
