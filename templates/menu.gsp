@@ -28,15 +28,16 @@
           </script></li>
           <li>
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- anuncio primario -->
-            <ins class="adsbygoogle"
-                 style="display:inline-block;width:728px;height:90px"
-                 data-ad-client="ca-pub-8008878266185770"
-               data-ad-slot="8840620240"></ins>
-            <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-          </li>
+              <!-- Anuncio Responsivo -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-8008878266185770"
+                   data-ad-slot="8164465842"
+                   data-ad-format="auto"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>            
+           </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
