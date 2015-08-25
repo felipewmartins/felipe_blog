@@ -1,0 +1,21 @@
+title=Falha ao carregar Js em aplicação Rails
+date=2015-08-24
+type=post
+tags=blog
+status=published
+~~~~~~
+
+<p>Falha ao carregar Js/Coffe em aplicação Rails</p><br>
+Caso seja inserida alguma lógica em um arquivo js ou coffee, e esse acabar por sendo carregado apenas uma vez, pode ser feito o procedimento abaixo.<br>
+
+<ul>
+    <li>
+        Inserir no Gemfile a gem jquery turbolink:<br><script src="https://gist.github.com/felipewmartins/5acc6d37a2758cdd4dd9.js"></script>
+    </li>
+    <li>
+        Inserir no arquivo <b>application.js</b>, o seguinte código: <br><script src="https://gist.github.com/felipewmartins/a0353b6c30189707a610.js"></script>
+    </li>
+</ul><br>
+Feito isso, o rails gerenciará melhor, os Js e coffees inseridos nos arquivos externos ao html/erb.<br>
+
+Abraço!
